@@ -63,5 +63,5 @@ function rprompt-git-current-branch {
 # プロンプトが表示されるたびにプロンプト文字列を評価、置換する
 setopt prompt_subst
 
-# プロンプトの右側(RPROMPT)にメソッドの結果を表示させる
+# プロンプトの左側(PROMPT)にメソッドの結果を表示させる
 PROMPT='%n /%C `rprompt-git-current-branch`%F{white}%# '
