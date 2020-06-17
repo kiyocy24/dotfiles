@@ -30,5 +30,9 @@ git clone https://github.com/kiyocy24/dotfiles.git ~/dotfiles
 echo 'complete: git clone dotfiles'
 
 echo 'start: setup symbolic links'
-ln -s ~/dotfiles/shells/.zprofile ~/.zprofile
-ln -s ~/dotfiles/dein ~/dein
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/dotfiles/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/dotfiles/.${rcfile:t}"
+done
+
+echo 'completed!'
