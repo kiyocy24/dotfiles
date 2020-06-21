@@ -26,13 +26,10 @@ echo 'Installing git...'
 brew install git
 
 echo 'start: git clone dotfiles'
-git clone https://github.com/kiyocy24/dotfiles.git ~/dotfiles
+git clone --recursive https://github.com/kiyocy24/dotfiles.git ~/dotfiles
 echo 'complete: git clone dotfiles'
 
-echo 'start: setup symbolic links'
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/dotfiles/.zprezto/runcoms/^README.md(.N); do
-  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/dotfiles/.${rcfile:t}"
-done
+echo 'start: apply .zshrc'
+source ~/dotfiles/.zshrc
 
 echo 'completed!'
