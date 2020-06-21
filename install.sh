@@ -36,6 +36,7 @@ ln -sf ~/dotfiles/.zprezto/runcoms/zpreztorc ~/.zpreztorc
 ln -sf ~/doftiles/.zprezto/runcoms/zshenv ~/.zshenv
 ln -sf ~/dotfiles/.zprofile ~/.zprofile
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/nvim ~/.confg/nvim
 
 echo 'start: apply .zshrc'
 source ~/dotfiles/.zshrc
