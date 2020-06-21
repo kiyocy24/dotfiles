@@ -29,6 +29,14 @@ echo 'start: git clone dotfiles'
 git clone --recursive https://github.com/kiyocy24/dotfiles.git ~/dotfiles
 echo 'complete: git clone dotfiles'
 
+echo 'start: set sybolic link'
+ln -sf ~/dotfiles/.zprezto/runcoms/zlogin ~/.zlogin
+ln -sf ~/dotfiles/.zprezto/runcoms/zlogout ~/.zlogout
+ln -sf ~/dotfiles/.zprezto/runcoms/zpreztorc ~/.zpreztorc
+ln -sf ~/doftiles/.zprezto/runcoms/zshenv ~/.zshenv
+ln -sf ~/dotfiles/.zprofile ~/.zprofile
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
+
 echo 'start: apply .zshrc'
 source ~/dotfiles/.zshrc
 
