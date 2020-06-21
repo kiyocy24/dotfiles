@@ -8,7 +8,7 @@ cd ~
 #--------------------------------------------------------------#
 echo 'start: Clean setting files'
 [ -f ~/.zshrc ] && rm ~/.zshrc
-
+[ -f ~/.zprofile ] && rm ~/.zprofile
 
 #--------------------------------------------------------------#
 ##        HomeBrew install                                    ##
@@ -36,7 +36,7 @@ ln -sf ~/dotfiles/.zprezto/runcoms/zpreztorc ~/.zpreztorc
 ln -sf ~/doftiles/.zprezto/runcoms/zshenv ~/.zshenv
 ln -sf ~/dotfiles/.zprofile ~/.zprofile
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/nvim ~/.confg/nvim
+ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
 
 echo 'start: apply .zshrc'
 source ~/dotfiles/.zshrc
