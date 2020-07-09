@@ -35,10 +35,10 @@ brew install lazygit
 echo 'Installing tmux...'
 brew install tmux
 
-echo 'Installing ghq'
+echo 'Installing ghq...'
 brew install ghq
 
-echo 'Installing fzf'
+echo 'Installing fzf...'
 brew install fzf
 
 echo 'Download: git clone dotfiles...'
@@ -46,14 +46,14 @@ git clone --recursive https://github.com/kiyocy24/dotfiles.git ~/dotfiles
 echo 'Complete: git clone dotfiles'
 
 echo 'set sybolic link'
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
 ln -sf ~/dotfiles/.zprezto/runcoms/zlogin ~/.zlogin
 ln -sf ~/dotfiles/.zprezto/runcoms/zlogout ~/.zlogout
 ln -sf ~/dotfiles/.zprezto/runcoms/zpreztorc ~/.zpreztorc
 ln -sf ~/doftiles/.zprezto/runcoms/zshenv ~/.zshenv
 ln -sf ~/dotfiles/.zprofile ~/.zprofile
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
-ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
 
 
 echo 'apply .zshrc'
