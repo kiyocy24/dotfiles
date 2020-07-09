@@ -48,12 +48,12 @@ echo 'Complete: git clone dotfiles'
 echo 'set sybolic link'
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/.zprofile ~/.zprofile
 ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
 ln -sf ~/dotfiles/.zprezto/runcoms/zlogin ~/.zlogin
 ln -sf ~/dotfiles/.zprezto/runcoms/zlogout ~/.zlogout
 ln -sf ~/dotfiles/.zprezto/runcoms/zpreztorc ~/.zpreztorc
 ln -sf ~/doftiles/.zprezto/runcoms/zshenv ~/.zshenv
-ln -sf ~/dotfiles/.zprofile ~/.zprofile
 
 
 echo 'apply .zshrc'
