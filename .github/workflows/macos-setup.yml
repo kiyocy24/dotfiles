@@ -10,6 +10,8 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Run install script
         run: |
+          shell: zsh {0}
           curl -s https://raw.githubusercontent.com/kiyocy24/dotfiles/master/install.sh | sh
