@@ -28,7 +28,9 @@ brew install git
 echo 'Installing tig'
 brew install tig
 
+echo 'Installing lazygit'
 brew install lazygit
+
 echo 'start: git clone dotfiles'
 git clone --recursive https://github.com/kiyocy24/dotfiles.git ~/dotfiles
 echo 'complete: git clone dotfiles'
