@@ -4,7 +4,7 @@ fi
 
 autoload -Uz promptinit
 promptinit
-prompt sorin
+prompt pure
 
 alias ls='ls -FG'
 alias ll='ls -alFG'
