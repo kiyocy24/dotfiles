@@ -1,0 +1,15 @@
+# This is a basic workflow to help you get started with Actions
+
+name: macOS setup
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on: [push]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Run install script
+        run: |
+          curl -s https://raw.githubusercontent.com/kiyocy24/dotfiles/master/install.sh | sh
