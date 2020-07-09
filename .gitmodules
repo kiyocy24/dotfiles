@@ -1,6 +1,6 @@
 [submodule ".zprezto"]
 	path = .zprezto
-	url = git@github.com:sorin-ionescu/prezto.git
+	url = git@github.com:kiyocy24/prezto.git
         ignore = dirty
 [submodule "nvim"]
 	path = nvim
