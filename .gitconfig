@@ -2,5 +2,3 @@
   path = ~/.gitconfig-kiyocy
 [includeIf "gitdir:~/dotfiles/"]
   path = ~/.gitconfig-kiyocy
-[ghq]
-	root = /Users/kiyoshi.kanazawa/ghq
