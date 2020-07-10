@@ -12,7 +12,7 @@ echo 'start: Clean setting files'
 
 
 #--------------------------------------------------------------#
-##        HomeBrew install and other app                      ##
+##        Install HomeBrew and other app                      ##
 #--------------------------------------------------------------#
 echo 'start: Install HomeBrew'
 brew update
@@ -55,6 +55,7 @@ ln -sf ~/dotfiles/.zprezto/runcoms/zlogout ~/.zlogout
 ln -sf ~/dotfiles/.zprezto/runcoms/zpreztorc ~/.zpreztorc
 ln -sf ~/doftiles/.zprezto/runcoms/zshenv ~/.zshenv
 
+echo 'set ghq directory'
 
 echo 'apply .zshrc'
 source ~/dotfiles/.zshrc
