@@ -56,6 +56,7 @@ ln -sf ~/dotfiles/.zprezto/runcoms/zpreztorc ~/.zpreztorc
 ln -sf ~/doftiles/.zprezto/runcoms/zshenv ~/.zshenv
 
 echo 'set ghq directory'
+git config --global ghq.root $HOME/ghq
 
 echo 'apply .zshrc'
 source ~/dotfiles/.zshrc
