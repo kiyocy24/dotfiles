@@ -1,4 +1,4 @@
-[user]
-	email = kiyocy24@gmail.com
-[pull]
-	rebase = false
+[includeIf "gitdir:~/ghq/github.com/"]
+  path = ~/.gitconfig-kiyocy
+[includeIf "gitdir:~/dotfiles/"]
+  path = ~/.gitconfig-kiyocy
