@@ -1,4 +1,5 @@
 [user]
+        name = kiyocy24
 	email = kiyocy24@gmail.com
 [pull]
 	rebase = false email
