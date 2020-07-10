@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 echo 'Hello! from dotfiles/install.sh'
 cd ~
 
