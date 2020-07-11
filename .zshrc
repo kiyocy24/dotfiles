@@ -8,7 +8,15 @@ prompt pure
 
 alias ls='ls -FG'
 alias ll='ls -alFG'
+alias vi='nvim'
 alias vim='nvim'
+
+alias ga='git add'
+alias gc='git commit -m'
+alias gca='git commit --amend'
+alias gst='git status'
+alias gd='git diff'
+alias gf='git fetch'
 
 unsetopt correct
 
