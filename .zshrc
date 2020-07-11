@@ -10,6 +10,7 @@ alias ls='ls -FG'
 alias ll='ls -alFG'
 alias vi='nvim'
 alias vim='nvim'
+alias t='tmux'
 
 alias ga='git add'
 alias gc='git commit -m'
