@@ -64,3 +64,4 @@ echo 'source .zshrc'
 source ~/dotfiles/.zshrc
 
 echo 'completed!'
+
