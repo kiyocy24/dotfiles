@@ -18,8 +18,7 @@ nnoremap sh <C-w>h
 nnoremap ss :<C-u>sp<CR><C-w>j
 nnoremap sv :<C-u>vs<CR><C-w>l
 
-filetype plugin indent on
-syntax enable
+syntax on
 
 " dein.vim
 if &compatible
@@ -41,4 +40,6 @@ endif
 if dein#check_install()
     call dein#install()
 endif
+
+filetype plugin indent on
 
