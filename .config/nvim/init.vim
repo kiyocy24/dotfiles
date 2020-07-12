@@ -18,6 +18,9 @@ nnoremap sh <C-w>h
 nnoremap ss :<C-u>sp<CR><C-w>j
 nnoremap sv :<C-u>vs<CR><C-w>l
 
+" NERDTreeToggle
+nnoremap <silent><C-n> :NERDTreeToggle<CR>
+
 syntax on
 
 " dein.vim
