@@ -3,9 +3,12 @@ set number
 set clipboard=unnamed
 set expandtab
 set autoindent
+set tabstop=4
 set shiftwidth=2
 set nowrap
 set inccommand=split
+
+let mapleader="\<Space>"
 
 " key bind
 nnoremap sj <C-w>j
@@ -14,6 +17,9 @@ nnoremap sl <C-w>l
 nnoremap sh <C-w>h
 nnoremap ss :<C-u>sp<CR><C-w>j
 nnoremap sv :<C-u>vs<CR><C-w>l
+
+filetype plugin indent on
+syntax enable
 
 " dein.vim
 if &compatible
@@ -35,7 +41,4 @@ endif
 if dein#check_install()
     call dein#install()
 endif
-
-filetype plugin indent on
-syntax enable
 

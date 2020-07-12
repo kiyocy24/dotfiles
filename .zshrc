@@ -21,6 +21,8 @@ alias gf='git fetch'
 
 unsetopt correct
 
+export GOPATH=$HOME/go
+export PATH="$PATH:$GOPATH/bin"
 
 function move_to_repository() {
    cd $(ghq list -p --vcs=git | fzf --reverse)
