@@ -41,6 +41,9 @@ brew install ghq
 echo 'Installing fzf...'
 brew install fzf
 
+echo 'Installing'
+brew install yarn
+
 echo 'Downloading git clone dotfiles...'
 git clone --recursive https://github.com/kiyocy24/dotfiles.git ~/dotfiles
 
