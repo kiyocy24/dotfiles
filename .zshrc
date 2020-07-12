@@ -27,6 +27,6 @@ export PATH="$PATH:$GOPATH/bin"
 function move_to_repository() {
    cd $(ghq list -p --vcs=git | fzf --reverse)
    zle reset-prompt
- }
- zle -N move_to_repository
- bindkey '^g' move_to_repository
+}
+zle -N move_to_repository
+bindkey '^g' move_to_repository
