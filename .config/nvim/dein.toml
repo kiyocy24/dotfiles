@@ -38,3 +38,7 @@ merged = '0'
 hook_add = '''
   source ~/.config/nvim/plugins/coc.vim
   '''
+
+# Full path fuzzy file, buffer, mru, tag, ... finder
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
