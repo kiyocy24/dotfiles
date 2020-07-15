@@ -21,12 +21,21 @@ alias gf='git fetch'
 
 unsetopt correct
 
-export GOPATH=$HOME/go
-export PATH="$PATH:$GOPATH/bin"
-
 function move_to_repository() {
    cd $(ghq list -p --vcs=git | fzf --reverse)
    zle reset-prompt
 }
 zle -N move_to_repository
 bindkey '^g' move_to_repository
+
+export GOENV_ROOT="${HOME}/.goenv"
+export PATH="${GOENV_ROOT}/bin:$PATH"
+eval "$(goenv init -)"
+
+eval "$(direnv hook zsh)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/kiyoshi.kanazawa/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kiyoshi.kanazawa/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/kiyoshi.kanazawa/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kiyoshi.kanazawa/google-cloud-sdk/completion.zsh.inc'; fi
