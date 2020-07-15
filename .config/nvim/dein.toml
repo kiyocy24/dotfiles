@@ -42,3 +42,7 @@ hook_add = '''
 # Full path fuzzy file, buffer, mru, tag, ... finder
 [[plugins]]
 repo = 'ctrlpvim/ctrlp.vim'
+
+# Window size controller
+[[plugins]]
+repo = 'simeji/winresizer'
