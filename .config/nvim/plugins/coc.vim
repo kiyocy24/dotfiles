@@ -147,3 +147,8 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>s
+
+
+" my setting
+highlight CocErrorSign ctermfg=15 ctermbg=161
+highlight CocWarningSign ctermfg=0 ctermbg=172
