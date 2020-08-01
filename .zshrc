@@ -26,7 +26,7 @@ function move_to_repository() {
    zle reset-prompt
 }
 zle -N move_to_repository
-bindkey '^g' move_to_repository
+bindkey '^q' move_to_repository
 
 export GOENV_ROOT="${HOME}/.goenv"
 export PATH="${GOENV_ROOT}/bin:$PATH"
