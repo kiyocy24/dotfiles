@@ -28,3 +28,5 @@ function move_to_repository() {
 zle -N move_to_repository
 bindkey '^q' move_to_repository
 
+eval "$(direnv hook zsh)"
+
