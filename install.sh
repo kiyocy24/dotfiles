@@ -57,11 +57,6 @@ brew cask install docker
 echo "Installing Typora"
 brew cask install typora
 
-echo 'Installing nvim'
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > ~/installer.sh
-sh ~/installer.sh ~/.cache/dein
-rm ~/installer.sh
-
 echo 'Setup default shell'
 chsh -s /usr/local/bin/zsh
 
@@ -82,6 +77,7 @@ ln -sf ~/dotfiles/.gitconfig-kiyocy ~/.gitconfig-kiyocy
 ln -sf ~/dotfiles/.gitconfig-enterprise ~/.gitconfig-enterprise
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 
+mkdir -p ~/.config
 ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
 ln -sf ~/dotfiles/.zprezto/runcoms/zlogin ~/.zlogin
 ln -sf ~/dotfiles/.zprezto/runcoms/zlogout ~/.zlogout
