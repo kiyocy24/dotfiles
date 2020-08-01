@@ -42,6 +42,9 @@ brew cask install alfred
 echo "Installing Google Japanese IME"
 brew cask install google-japanese-ime
 
+echo "Installing Visual Studio Code"
+brew cask install visual-studio-code
+
 echo 'Installing nvim'
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > ~/installer.sh
 sh ~/installer.sh ~/.cache/dein
