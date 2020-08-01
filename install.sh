@@ -48,6 +48,9 @@ brew cask install visual-studio-code
 echo "Installing Docker"
 brew cask install docker
 
+echo "Installing Typora"
+brew cask install typora
+
 echo 'Installing nvim'
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > ~/installer.sh
 sh ~/installer.sh ~/.cache/dein
