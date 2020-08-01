@@ -41,6 +41,9 @@ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh >
 sh ~/installer.sh ~/.cache/dein
 rm ~/installer.sh
 
+echo 'Setup default shell'
+chsh -s /usr/local/bin/zsh
+
 echo 'Starting clean setting files'
 [ -f ~/.bashrc ] && rm ~/.bashrc
 [ -f ~/.bash_profile ] && rm ~/.bash_profile
