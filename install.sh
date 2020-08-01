@@ -5,7 +5,7 @@ defaults write -g KeyRepeat -int 2
 defaults write -g InitialKeyRepeat -int 10
 
 echo 'Installing Xcode'
-xcode-select-install
+xcode-select --install
 
 echo 'Updating HomeBrew'
 brew update
