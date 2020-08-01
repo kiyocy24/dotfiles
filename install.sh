@@ -4,33 +4,36 @@ echo 'Hello! from dotfiles/install.sh'
 defaults write -g KeyRepeat -int 2
 defaults write -g InitialKeyRepeat -int 10
 
+echo 'Installing Xcode'
+xcode-select-install
+
 echo 'Updating HomeBrew'
 brew update
 brew doctor
 
-echo 'Installing zsh...'
+echo 'Installing zsh'
 brew install zsh
 brew install zsh-completion
 
-echo 'Installing git...'
+echo 'Installing git'
 brew install git
 
-echo 'Installing tig...'
+echo 'Installing tig'
 brew install tig
 
-echo 'Installing lazygit...'
+echo 'Installing lazygit'
 brew install lazygit
 
-echo 'Installing tmux...'
+echo 'Installing tmux'
 brew install tmux
 
-echo 'Installing ghq...'
+echo 'Installing ghq'
 brew install ghq
 
-echo 'Installing fzf...'
+echo 'Installing fzf'
 brew install fzf
 
-echo 'Installing yarn...'
+echo 'Installing yarn'
 brew install yarn
 
 echo 'Installing direnv'
