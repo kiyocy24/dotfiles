@@ -4,6 +4,9 @@ echo 'Hello! from dotfiles/install.sh'
 defaults write -g KeyRepeat -int 2
 defaults write -g InitialKeyRepeat -int 10
 
+echo "Install HomeBrew"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
 echo 'Updating HomeBrew'
 brew update
 brew doctor
