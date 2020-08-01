@@ -27,6 +27,9 @@ brew install lazygit
 echo 'Installing tmux'
 brew install tmux
 
+echo 'Install neovim'
+brew install neovim
+
 echo 'Installing ghq'
 brew install ghq
 
