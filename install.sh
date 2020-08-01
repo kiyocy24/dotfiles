@@ -1,23 +1,12 @@
 #!/bin/zsh
 echo 'Hello! from dotfiles/install.sh'
-cd ~
 
+defaults write -g KeyRepeat -int 2
+defaults write -g InitialKeyRepeat -int 10
 
-#--------------------------------------------------------------#
-##        Clean setting files                                 ##
-#--------------------------------------------------------------#
-echo 'start: Clean setting files'
-[ -f ~/.zshrc ] && rm ~/.zshrc
-[ -f ~/.zprofile ] && rm ~/.zprofile
-
-
-#--------------------------------------------------------------#
-##        Install HomeBrew and other app                      ##
-#--------------------------------------------------------------#
-echo 'start: Install HomeBrew'
+echo 'Updating HomeBrew'
 brew update
 brew doctor
-echo 'complete: Install Homebrew'
 
 echo 'Installing zsh...'
 brew install zsh
@@ -46,6 +35,17 @@ brew install yarn
 
 echo 'Installing direnv'
 brew install direnv 
+
+echo 'Installing nvim'
+curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > ~/installer.sh
+sh ~/installer.sh ~/.cache/dein
+rm ~/installer.sh
+
+echo 'Starting clean setting files'
+[ -f ~/.bashrc ] && rm ~/.bashrc
+[ -f ~/.bash_profile ] && rm ~/.bash_profile
+[ -f ~/.zshrc ] && rm ~/.zshrc
+[ -f ~/.zprofile ] && rm ~/.zprofile
 
 echo 'Downloading git clone dotfiles...'
 git clone --recursive https://github.com/kiyocy24/dotfiles.git ~/dotfiles
