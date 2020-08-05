@@ -2,3 +2,6 @@
   path = ~/.gitconfig-kiyocy
 [includeIf "gitdir:~/dotfiles/"]
   path = ~/.gitconfig-kiyocy
+[includeIf "gitdir:~/ghq/<enterprise-url>/"]
+  path = ~/.gitconfig-enterprise
+
