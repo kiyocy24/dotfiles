@@ -11,7 +11,11 @@ repo = 'airblade/vim-gitgutter'
 repo = 'scrooloose/nerdtree'
 hook_add = '''
   source ~/.config/nvim/plugins/nerdtree.vim
-  '''
+'''
+
+# Nerdtree git plugin
+[[plugins]]
+repo = 'Xuyuanp/nerdtree-git-plugin'
 
 # Support parentheses, brackets, quotes, XML tags, and more 
 [[plugins]]
@@ -37,7 +41,7 @@ on_i = 1
 merged = '0'
 hook_add = '''
   source ~/.config/nvim/plugins/coc.vim
-  '''
+'''
 
 # Full path fuzzy file, buffer, mru, tag, ... finder
 [[plugins]]
