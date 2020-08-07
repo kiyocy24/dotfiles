@@ -8,6 +8,8 @@ set shiftwidth=4
 set nowrap
 set inccommand=split
 
+syntax on
+
 let mapleader="\<Space>"
 
 " key bind
@@ -20,8 +22,6 @@ nnoremap sv :<C-u>vs<CR><C-w>l
 
 " NERDTreeToggle
 nnoremap <silent><C-n> :NERDTreeToggle<CR>
-
-syntax on
 
 " dein.vim
 if &compatible
@@ -45,4 +45,3 @@ if dein#check_install()
 endif
 
 filetype plugin indent on
-

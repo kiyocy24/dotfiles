@@ -50,3 +50,7 @@ repo = 'ctrlpvim/ctrlp.vim'
 # Window size controller
 [[plugins]]
 repo = 'simeji/winresizer'
+
+# Go auto formatter
+[[plugins]]
+repo = 'mattn/vim-goimports'
