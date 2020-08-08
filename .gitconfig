@@ -1,7 +1,7 @@
 [includeIf "gitdir:~/ghq/github.com/"]
-  path = ~/.gitconfig-kiyocy
+  path = ~/.gitconfig-primary
 [includeIf "gitdir:~/dotfiles/"]
-  path = ~/.gitconfig-kiyocy
+  path = ~/.gitconfig-primary
 [includeIf "gitdir:~/ghq/<enterprise-url>/"]
   path = ~/.gitconfig-enterprise
 

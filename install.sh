@@ -73,7 +73,7 @@ echo 'set sybolic link'
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.zprofile ~/.zprofile
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
-ln -sf ~/dotfiles/.gitconfig-kiyocy ~/.gitconfig-kiyocy
+ln -sf ~/dotfiles/.gitconfig-primary ~/.gitconfig-primary
 ln -sf ~/dotfiles/.gitconfig-enterprise ~/.gitconfig-enterprise
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 
