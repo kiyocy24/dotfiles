@@ -9,6 +9,7 @@ set nowrap
 set inccommand=split
 
 syntax on
+colorscheme iceberg
 
 let mapleader="\<Space>"
 

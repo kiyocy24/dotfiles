@@ -1,3 +1,7 @@
+# Color scheme
+[[plugins]]
+repo = 'cocopon/pgmnt.vim'
+
 # Git wrapper
 [[plugins]]
 repo = 'tpope/vim-fugitive'
