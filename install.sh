@@ -76,6 +76,7 @@ ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.gitconfig-primary ~/.gitconfig-primary
 ln -sf ~/dotfiles/.gitconfig-enterprise ~/.gitconfig-enterprise
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/.ideavimrc ~/.ideavimrc
 
 mkdir -p ~/.config
 ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
