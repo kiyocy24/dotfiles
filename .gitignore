@@ -1,3 +1,4 @@
 .DS_Store
 .gitconfig-enterprise
 .config/karabiner/automatic_backups/**
+.idea
