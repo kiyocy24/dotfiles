@@ -43,26 +43,26 @@ echo 'Installing direnv'
 brew install direnv 
 
 echo 'Installing alfred'
-brew cask install alfred
+brew install --cask alfred
 
 echo "Installing Google Japanese IME"
-brew cask install google-japanese-ime
+brew install --cask google-japanese-ime
 
 echo "Installing Visual Studio Code"
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 
 echo "Installing Docker"
-brew cask install docker
+brew install --cask docker
 
 echo "Installing Typora"
-brew cask install typora
+brew install --cask typora
 
 echo "Installing dein"
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 sh ./installer.sh ~/.cache/dein
 
 echo 'Setup default shell'
-chsh -s /usr/local/bin/zsh
+chsh -s /bin/zsh
 
 echo 'Starting clean setting files'
 [ -f ~/.bashrc ] && rm ~/.bashrc
