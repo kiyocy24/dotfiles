@@ -57,6 +57,10 @@ brew cask install docker
 echo "Installing Typora"
 brew cask install typora
 
+echo "Installing dein"
+curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+sh ./installer.sh ~/.cache/dein
+
 echo 'Setup default shell'
 chsh -s /usr/local/bin/zsh
 
