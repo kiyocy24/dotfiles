@@ -80,6 +80,7 @@ ln -sf ~/dotfiles/.ideavimrc ~/.ideavimrc
 
 mkdir -p ~/.config
 ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
+ln -sf ~/dotfiles/.config/karabiner ~/.config/karabiner
 ln -sf ~/dotfiles/.zprezto/runcoms/zlogin ~/.zlogin
 ln -sf ~/dotfiles/.zprezto/runcoms/zlogout ~/.zlogout
 ln -sf ~/dotfiles/.zprezto/runcoms/zpreztorc ~/.zpreztorc
