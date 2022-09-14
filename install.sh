@@ -42,6 +42,9 @@ brew install yarn
 echo 'Installing direnv'
 brew install direnv 
 
+echo "Installing tfenv"
+brew install tfenv
+
 echo 'Installing alfred'
 brew install --cask alfred
 

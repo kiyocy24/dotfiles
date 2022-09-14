@@ -30,3 +30,4 @@ bindkey '^q' move_to_repository
 
 eval "$(direnv hook zsh)"
 
+export EDITOR=vim

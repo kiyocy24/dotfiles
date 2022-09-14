@@ -58,3 +58,7 @@ repo = 'simeji/winresizer'
 # Go auto formatter
 [[plugins]]
 repo = 'mattn/vim-goimports'
+
+# easymotion
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
