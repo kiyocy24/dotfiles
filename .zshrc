@@ -12,12 +12,8 @@ alias vi='nvim'
 alias vim='nvim'
 alias t='tmux'
 
-alias ga='git add'
-alias gc='git commit -m'
-alias gca='git commit --amend'
 alias gst='git status'
-alias gd='git diff'
-alias gf='git fetch'
+alias gca='git commit --amend'
 
 unsetopt correct
 
@@ -29,5 +25,4 @@ zle -N move_to_repository
 bindkey '^q' move_to_repository
 
 eval "$(direnv hook zsh)"
-
 export EDITOR=vim
