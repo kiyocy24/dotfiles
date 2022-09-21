@@ -36,9 +36,6 @@ brew install ghq
 echo 'Installing fzf'
 brew install fzf
 
-echo 'Installing yarn'
-brew install yarn
-
 echo 'Installing direnv'
 brew install direnv 
 
