@@ -44,3 +44,14 @@ function select-history() {
   BUFFER=$(history -n -r 1 | fzf --exact --reverse --query="$LBUFFER" --prompt="History > ")
   CURSOR=${#BUFFER}
 }
+
+# .zshがディレクトリで、読み取り、実行、が可能なとき
+ZSH_DIR=`pwd -P`/.zsh
+if [ -d $ZSH_DIR ] && [ -r $ZSH_DIR ] && [ -x $ZSH_DIR ]; then
+    # zshディレクトリより下にある、.zshファイルの分、繰り返す
+    for file in ${ZSH_DIR}/**/*.zsh; do
+        # 読み取り可能ならば実行する
+        [ -r $file ] && source $file
+    done
+fi
+

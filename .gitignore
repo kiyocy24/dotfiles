@@ -2,3 +2,4 @@
 .gitconfig-enterprise
 .config/karabiner/automatic_backups/**
 .idea
+.zsh
