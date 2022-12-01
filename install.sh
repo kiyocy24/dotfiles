@@ -45,6 +45,9 @@ brew install tfenv
 echo "Installing zplug"
 brew install zplug
 
+echo "Installing terminal-notifier"
+brew install terminal-notifier
+
 echo 'Installing alfred'
 brew install --cask alfred
 
