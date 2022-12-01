@@ -1,14 +1,3 @@
-# .zshがディレクトリで、読み取り、実行、が可能なとき
-real_zsh=`realpath ~/.zshrc`
-zsh_dir=`dirname $real_zsh`/.zsh
-if [ -d $zsh_dir ] && [ -r $zsh_dir ] && [ -x $zsh_dir ]; then
-    # zshディレクトリより下にある、.zshファイルの分、繰り返す
-    for file in ${zsh_dir}/**/*.zsh; do
-        # 読み取り可能ならば実行する
-        [ -r $file ] && source $file
-    done
-fi
-
 if [[ -s "${ZDOTDIR:-$HOME}/dotfiles/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/dotfiles/.zprezto/init.zsh"
 fi
