@@ -42,6 +42,9 @@ brew install direnv
 echo "Installing tfenv"
 brew install tfenv
 
+echo "Installing zplug"
+brew install zplug
+
 echo 'Installing alfred'
 brew install --cask alfred
 

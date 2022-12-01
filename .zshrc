@@ -1,3 +1,14 @@
+# .zshがディレクトリで、読み取り、実行、が可能なとき
+real_zsh=`realpath ~/.zshrc`
+zsh_dir=`dirname $real_zsh`/.zsh
+if [ -d $zsh_dir ] && [ -r $zsh_dir ] && [ -x $zsh_dir ]; then
+    # zshディレクトリより下にある、.zshファイルの分、繰り返す
+    for file in ${zsh_dir}/**/*.zsh; do
+        # 読み取り可能ならば実行する
+        [ -r $file ] && source $file
+    done
+fi
+
 if [[ -s "${ZDOTDIR:-$HOME}/dotfiles/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/dotfiles/.zprezto/init.zsh"
 fi
@@ -44,15 +55,13 @@ function select-history() {
   BUFFER=$(history -n -r 1 | fzf --exact --reverse --query="$LBUFFER" --prompt="History > ")
   CURSOR=${#BUFFER}
 }
-
-# .zshがディレクトリで、読み取り、実行、が可能なとき
-real_zsh=`realpath ~/.zshrc`
-zsh_dir=`dirname $real_zsh`/.zsh
-if [ -d $zsh_dir ] && [ -r $zsh_dir ] && [ -x $zsh_dir ]; then
-    # zshディレクトリより下にある、.zshファイルの分、繰り返す
-    for file in ${zsh_dir}/**/*.zsh; do
-        # 読み取り可能ならば実行する
-        [ -r $file ] && source $file
-    done
+# zsh notify
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
+zplug "marzocchi/zsh-notify"
+if ! zplug check --verbose; then
+  printf 'Install? [y/N]: '
+  if read -q; then
+    echo; zplug install
+  fi
 fi
-
