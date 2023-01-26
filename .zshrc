@@ -1,3 +1,4 @@
+export PATH=/opt/homebrew/bin:$PATH
 if [[ -s "${ZDOTDIR:-$HOME}/dotfiles/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/dotfiles/.zprezto/init.zsh"
 fi
@@ -23,7 +24,6 @@ function move_to_repository() {
 }
 zle -N move_to_repository
 bindkey '^q' move_to_repository
-
 eval "$(direnv hook zsh)"
 export EDITOR=vim
 # history search
@@ -44,13 +44,6 @@ function select-history() {
   BUFFER=$(history -n -r 1 | fzf --exact --reverse --query="$LBUFFER" --prompt="History > ")
   CURSOR=${#BUFFER}
 }
-# zsh notify
-export ZPLUG_HOME=/usr/local/opt/zplug
-source $ZPLUG_HOME/init.zsh
-zplug "marzocchi/zsh-notify"
-if ! zplug check --verbose; then
-  printf 'Install? [y/N]: '
-  if read -q; then
-    echo; zplug install
-  fi
-fi
+
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"

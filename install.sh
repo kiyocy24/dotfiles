@@ -45,14 +45,11 @@ brew install tfenv
 echo "Installing zplug"
 brew install zplug
 
-echo "Installing terminal-notifier"
-brew install terminal-notifier
+echo "Installing VOLTA"
+curl https://get.volta.sh | bash
 
 echo 'Installing alfred'
 brew install --cask alfred
-
-echo "Installing Google Japanese IME"
-brew install --cask google-japanese-ime
 
 echo "Installing Visual Studio Code"
 brew install --cask visual-studio-code
@@ -64,8 +61,7 @@ echo "Installing Typora"
 brew install --cask typora
 
 echo "Installing dein"
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-sh ./installer.sh ~/.cache/dein
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh)"
 
 echo 'Setup default shell'
 chsh -s /bin/zsh
