@@ -21,9 +21,6 @@ brew install git
 echo 'Installing tig'
 brew install tig
 
-echo 'Installing lazygit'
-brew install lazygit
-
 echo 'Installing tmux'
 brew install tmux
 
@@ -87,10 +84,6 @@ ln -sf ~/dotfiles/.ideavimrc ~/.ideavimrc
 mkdir -p ~/.config
 ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
 ln -sf ~/dotfiles/.config/karabiner ~/.config/karabiner
-ln -sf ~/dotfiles/.zprezto/runcoms/zlogin ~/.zlogin
-ln -sf ~/dotfiles/.zprezto/runcoms/zlogout ~/.zlogout
-ln -sf ~/dotfiles/.zprezto/runcoms/zpreztorc ~/.zpreztorc
-ln -sf ~/doftiles/.zprezto/runcoms/zshenv ~/.zshenv
 
 echo 'set ghq directory'
 git config --global ghq.root $HOME/ghq
