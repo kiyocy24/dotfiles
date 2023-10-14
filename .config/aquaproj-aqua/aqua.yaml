@@ -1,0 +1,8 @@
+registries:
+- type: standard
+  ref: v4.64.0
+packages:
+- name: junegunn/fzf@0.42.0
+- name: x-motemen/ghq@v1.4.2
+- name: direnv/direnv@v2.32.3
+- name: hashicorp/terraform@v1.6.1

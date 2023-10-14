@@ -1,3 +1,4 @@
+export PATH="/opt/homebrew/bin:$PATH"
 export EDITOR=vim
 
 alias ls='ls -FG'
@@ -20,6 +21,7 @@ function move_to_repository() {
 zle -N move_to_repository
 bindkey '^q' move_to_repository
 
+# direnv
 eval "$(direnv hook zsh)"
 
 # history search
@@ -41,5 +43,11 @@ function select-history() {
   CURSOR=${#BUFFER}
 }
 
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+# aqua
+export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml
+export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
+
+# starship
+eval "$(starship init zsh)"
+export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
+export STARSHIP_CACHE=~$HOME/.starship/cache

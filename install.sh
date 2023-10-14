@@ -27,29 +27,18 @@ brew install tmux
 echo 'Install neovim'
 brew install neovim
 
-echo 'Installing ghq'
-brew install ghq
+echo 'Install starship'
+brew install starship
 
-echo 'Installing fzf'
-brew install fzf
-
-echo 'Installing direnv'
-brew install direnv 
-
-echo "Installing tfenv"
-brew install tfenv
-
-echo "Installing zplug"
-brew install zplug
-
-echo "Installing VOLTA"
-curl https://get.volta.sh | bash
+echo "Installing aqua"
+brew install aquaproj/aqua/aqua
+aqua update-aqua
+export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml
+export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
+aqua -i -a
 
 echo 'Installing alfred'
 brew install --cask alfred
-
-echo "Installing Visual Studio Code"
-brew install --cask visual-studio-code
 
 echo "Installing Docker"
 brew install --cask docker
@@ -84,6 +73,8 @@ ln -sf ~/dotfiles/.ideavimrc ~/.ideavimrc
 mkdir -p ~/.config
 ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
 ln -sf ~/dotfiles/.config/karabiner ~/.config/karabiner
+ln -sf ~/dotfiles/.config/aquaproj-aqua ~/.config/aquaproj-aqua
+ln -sf ~/dotfiles/.config/starship ~/.config/starship
 
 echo 'set ghq directory'
 git config --global ghq.root $HOME/ghq
