@@ -14,6 +14,7 @@ brew doctor
 echo 'Installing zsh'
 brew install zsh
 brew install zsh-completion
+brew install zsh-autosuggestions
 
 echo 'Installing git'
 brew install git
