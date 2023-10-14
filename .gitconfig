@@ -6,7 +6,7 @@
   path = ~/.gitconfig-enterprise
 
 [alias]
-    conflicts = !git ls-files -u | cuf -f 2 | sort -ust
-    st = status
-    ch = checkout
-    br = branch
+  conflicts = !git ls-files -u | cuf -f 2 | sort -ust
+  st = status
+  ch = checkout
+  br = branch
