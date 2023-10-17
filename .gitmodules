@@ -1,4 +1,0 @@
-[submodule ".zprezto"]
-	path = .zprezto
-	url = https://github.com/kiyocy24/prezto.git
-        ignore = dirty
