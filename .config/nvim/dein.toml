@@ -37,16 +37,6 @@ repo = 'tomasr/molokai'
 [[plugins]]
 repo = 'cohama/lexima.vim'
 
-# Conquer of Completion
-[[plugins]]
-repo = 'neoclide/coc.nvim'
-rev = 'release'
-on_i = 1
-merged = '0'
-hook_add = '''
-  source ~/.config/nvim/plugins/coc.vim
-'''
-
 # Full path fuzzy file, buffer, mru, tag, ... finder
 [[plugins]]
 repo = 'ctrlpvim/ctrlp.vim'
