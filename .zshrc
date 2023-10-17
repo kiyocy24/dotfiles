@@ -21,6 +21,7 @@ if [[ -t 0 ]]; then
   stty stop undef  # ctrl+s
   stty start undef # ctrl+q
 fi
+autoload -Uz compinit && compinit
 
 # zinit
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
