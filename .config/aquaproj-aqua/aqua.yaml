@@ -6,3 +6,5 @@ packages:
 - name: x-motemen/ghq@v1.4.2
 - name: direnv/direnv@v2.32.3
 - name: hashicorp/terraform@v1.6.1
+- name: golang/go@go1.21.3
+- name: volta-cli/volta@v1.1.1

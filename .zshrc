@@ -59,3 +59,6 @@ export STARSHIP_CACHE=~$HOME/.starship/cache
 # direnv
 eval "$(direnv hook zsh)"
 
+# volta
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
