@@ -6,7 +6,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 --NERDTreeToggle
-keymap("n", "<leader><C-n>", ":NERDTreeToggle<CR>", opts)
+keymap("n", "<C-n>", ":NERDTreeToggle<CR>", opts)
 keymap("n", "sj", "<C-w>j", opts)
 keymap("n", "sk", "<C-w>k", opts)
 keymap("n", "sl", "<C-w>l", opts)
