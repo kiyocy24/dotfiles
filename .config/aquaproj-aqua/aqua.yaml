@@ -8,3 +8,4 @@ packages:
 - name: hashicorp/terraform@v1.6.1
 - name: golang/go@go1.21.3
 - name: volta-cli/volta@v1.1.1
+- name: cli/cli@v2.43.1
