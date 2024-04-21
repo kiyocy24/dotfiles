@@ -13,4 +13,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run install script
         run: |
-          curl -fsSL https://raw.githubusercontent.com/kiyocy24/dotfiles/master/install.sh | zsh
+          curl -fsSL https://raw.githubusercontent.com/kiyocy24/dotfiles/${{ github.ref_name }}/install.sh | zsh
