@@ -2,4 +2,4 @@
 .gitconfig-enterprise
 .config/karabiner/automatic_backups/**
 .idea
-.zsh
+**/packer_compiled.lua

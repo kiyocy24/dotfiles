@@ -13,7 +13,6 @@ brew doctor
 
 echo 'Installing zsh'
 brew install zsh
-brew install zsh-completion
 
 echo 'Installing git'
 brew install git
@@ -21,41 +20,26 @@ brew install git
 echo 'Installing tig'
 brew install tig
 
-echo 'Installing lazygit'
-brew install lazygit
-
 echo 'Installing tmux'
 brew install tmux
 
 echo 'Install neovim'
 brew install neovim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
-echo 'Installing ghq'
-brew install ghq
+echo 'Install starship'
+brew install starship
 
-echo 'Installing fzf'
-brew install fzf
-
-echo 'Installing direnv'
-brew install direnv 
-
-echo "Installing tfenv"
-brew install tfenv
-
-echo "Installing zplug"
-brew install zplug
-
-echo "Installing terminal-notifier"
-brew install terminal-notifier
+echo "Installing aqua"
+brew install aquaproj/aqua/aqua
+aqua update-aqua
+export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml
+export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
+aqua -i -a
 
 echo 'Installing alfred'
 brew install --cask alfred
-
-echo "Installing Google Japanese IME"
-brew install --cask google-japanese-ime
-
-echo "Installing Visual Studio Code"
-brew install --cask visual-studio-code
 
 echo "Installing Docker"
 brew install --cask docker
@@ -64,8 +48,7 @@ echo "Installing Typora"
 brew install --cask typora
 
 echo "Installing dein"
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-sh ./installer.sh ~/.cache/dein
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh)"
 
 echo 'Setup default shell'
 chsh -s /bin/zsh
@@ -91,10 +74,8 @@ ln -sf ~/dotfiles/.ideavimrc ~/.ideavimrc
 mkdir -p ~/.config
 ln -sf ~/dotfiles/.config/nvim ~/.config/nvim
 ln -sf ~/dotfiles/.config/karabiner ~/.config/karabiner
-ln -sf ~/dotfiles/.zprezto/runcoms/zlogin ~/.zlogin
-ln -sf ~/dotfiles/.zprezto/runcoms/zlogout ~/.zlogout
-ln -sf ~/dotfiles/.zprezto/runcoms/zpreztorc ~/.zpreztorc
-ln -sf ~/doftiles/.zprezto/runcoms/zshenv ~/.zshenv
+ln -sf ~/dotfiles/.config/aquaproj-aqua ~/.config/aquaproj-aqua
+ln -sf ~/dotfiles/.config/starship ~/.config/starship
 
 echo 'set ghq directory'
 git config --global ghq.root $HOME/ghq
