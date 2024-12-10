@@ -4,5 +4,5 @@
 run command.
 
 ```sh:terminal
-$ curl -s https://raw.githubusercontent.com/kiyocy24/dotfiles/master/install.sh | sh
+$ curl -s https://raw.githubusercontent.com/kiyocy24/dotfiles/main/install.sh | sh
 ```
