@@ -38,11 +38,11 @@ export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.conf
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
 aqua -i -a
 
+echo "Installing colima"
+brew install colima
+
 echo 'Installing alfred'
 brew install --cask alfred
-
-echo "Installing Docker"
-brew install --cask docker
 
 echo "Installing Typora"
 brew install --cask typora
